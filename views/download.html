@@ -1,0 +1,5 @@
+{% for path in paths %}
+  {% if loop.first %}<ol>{% endif %}
+  <li><a href="uploads\{{path}}"> {{path}}</a></li>
+  {% if loop.last %}</ol>{% endif %}
+{% endfor %}
